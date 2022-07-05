@@ -1,0 +1,103 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --pt: "PT Serif", serif;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+h1 {
+  font-family: var(--pt);
+  font-weight: 700;
+  padding: 5rem 0;
+  font-size: 36px;
+}
+@media (min-width: 768px) {
+  h1 {
+    padding: 0;
+  }
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 5rem auto;
+}
+
+.header {
+  margin-bottom: 10rem;
+  padding: 0 5rem;
+}
+.texto {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    padding: 0;
+  }
+  .titulo {
+    width: 50%;
+  }
+  .descripcion {
+    width: 50%;
+  }
+  .texto {
+    width: 70%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.role {
+  font-family: var(--pt);
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 1.2rem;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10rem;
+  padding: 0 5rem;
+}
+.person:nth-child(2n) {
+  margin-top: 7rem;
+}
+@media (min-width: 768px) {
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+  .person:nth-child(3n + 2) {
+    margin-top: 7rem;
+  }
+  .person:nth-child(2n + 4) {
+    margin-top: 0;
+  }
+}
+
+.name {
+  font-family: var(--poppins);
+  font-size: 1.8rem;
+}
+
+.footer {
+  text-align: center;
+  color: #a9a9a9;
+  margin: 1rem 0;
+}
