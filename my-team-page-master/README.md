@@ -23,7 +23,7 @@
 ## Overview
 
 ![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/my-team-page-master/img/web.jpeg)
-![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/my-team-page-master/img/phone.jpeg)
+![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/my-team-page-master/img/phone.png)
 
 
 - What was your experience? Super fun ngl.
