@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 120rem;
+  }
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  h3 {
+    margin-top: 5rem;
+  }
+}
+h1 {
+  font-size: 4.8rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+}
+.texto {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 400;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .texto {
+    font-size: 2.4rem;
+    width: 65%;
+  }
+}
+
+.boton {
+  background-color: #333333;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 75%;
+}
+@media (min-width: 768px) {
+  .boton {
+    width: 50%;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main {
+    padding-bottom: 10rem;
+  }
+  footer {
+    position: static;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #bdbdbd;
+  font-family: "Montserrat", sans-serif;
+}
