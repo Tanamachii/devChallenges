@@ -22,8 +22,8 @@
 
 ## Overview
 
-![screenshot]('img/web.png')
-![screenshot]('img/phone.png')
+![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/404-not-found-master/img/phone.png)
+![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/404-not-found-master/img/web.png)
 
 - What was your experience? Actually it was very fun :)
 - What have you learned/improved? combine de use of flex and grid
