@@ -68,19 +68,25 @@ img {
 }
 .navbar {
   display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 3rem;
 }
 .menu {
   font-size: 36px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .hidden {
     display: none;
   }
   .navbar {
-    width: 50%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    width: 50%;
     justify-content: space-around;
+    gap: 2rem;
   }
 }
 
@@ -154,7 +160,16 @@ img {
 .decoradora {
   padding: 2rem;
   box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.46);
-  background: #181719;
+  background-color: #181719;
+  margin: -8rem auto;
+  width: 90%;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .decoradora {
+    width: 70%;
+    margin: -8rem 0 0 15rem;
+  }
 }
 .decoradora__perfil {
   display: flex;
@@ -209,4 +224,34 @@ img {
   .footer {
     position: static;
   }
+}
+
+.cerrar {
+  font-size: 36px;
+  z-index: 200;
+}
+@media (min-width: 768px) {
+  .cerrar {
+    display: none;
+  }
+}
+.ocultar {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: #181719;
+}
+.flex {
+  display: flex;
 }
