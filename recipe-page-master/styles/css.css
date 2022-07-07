@@ -1,0 +1,159 @@
+:root {
+  --Montserrat: "Montserrat", sans-serif;
+  --Playfair: "Playfair Display", serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--Montserrat);
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+.titulo {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  font-family: var(--Playfair);
+}
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 4.8rem;
+  }
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .flex {
+    width: 50%;
+  }
+}
+.flex__texto {
+  font-weight: 500;
+  font-size: 14px;
+}
+.pastel {
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .pastel {
+    border-radius: 0;
+  }
+}
+.receta {
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column-reverse;
+}
+.tiempo {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+@media (min-width: 768px) {
+  .receta {
+    flex-direction: row;
+    gap: 20rem;
+  }
+  .ingredientes {
+    width: 80%;
+  }
+  .tiempo {
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 1px 0px 13px 4px rgba(170, 170, 170, 0.19);
+    place-items: center;
+    max-height: 30rem;
+    border-radius: 1rem;
+    width: 20%;
+  }
+}
+
+.food {
+  color: #f2994a;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+.--color-text {
+  color: #bdbdbd;
+}
+.checkbox-text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+  display: block;
+}
+@media (min-width: 768px) {
+  .checkbox-text {
+    width: 80%;
+  }
+}
+.checkbox {
+  margin-right: 2rem;
+}
+h4 {
+  font-family: var(--Playfair);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+}
+.tiempo span {
+  text-align: center;
+}
+.titulo-secundario {
+  font-family: var(--Playfair);
+}
+.instrucciones {
+  display: flex;
+  gap: 2rem;
+}
+.instrucciones__numero {
+  max-width: 10%;
+  max-height: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #f2994a;
+  font-family: var(--Playfair);
+  color: white;
+  border-radius: 10%;
+  font-size: 18px;
+}
+.instrucciones__texto {
+  width: 90%;
+}
+.src {
+  color: #bdbdbd;
+  font-family: var(--Montserrat);
+  font-style: italic;
+  font-size: 16px;
+}
+.footer {
+  text-align: center;
+  opacity: 30%;
+}
