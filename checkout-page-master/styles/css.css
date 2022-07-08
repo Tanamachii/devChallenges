@@ -32,14 +32,14 @@ img {
   width: 135px;
   height: 135px;
 }
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-  color: #828282;
-  font-size: 32px;
-}
 .--gris {
   color: #828282;
 }
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 32px;
+}
+
 .--naranja {
   color: #f2994a;
   font-weight: 600;
@@ -68,8 +68,7 @@ img {
   text-decoration: line-through;
   display: inline;
 }
-.form {
-}
+
 .car-total {
   padding: 3rem;
   background-color: #f2f2f2;
