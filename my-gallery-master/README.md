@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://harmonious-rolypoly-bb3f86.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -21,15 +21,14 @@
 <!-- OVERVIEW -->
 
 ## Overview
-
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/my-gallery-master/img/web.jpeg)
+![screenshot](https://github.com/Tanamachii/devChallenges/blob/main/my-gallery-master/img/phone.png)
 
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 
@@ -48,5 +47,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@tanamachii](https://github.com/tanamachii)
+- Twitter [@tanamachl](https://twitter.com/tanamachl)
