@@ -6,12 +6,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout Page</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/css.css">
 </head>
 
 <body>
+  <div class="container">
+    <h1 class="titulo-principal">Checkout</h1>
+    <main class="grid">
+      <div class="form">
+        <h2>Contact infomation</h2>
+      </div>
+      <div class="car-total">
+        <div class="car">
+          <img src="img/photo1.png" alt="mochila">
+          <div class="precio-cantidad">
+            <div>
+              <h3>Vintage Backbag</h3>
+              <p class="--naranja">$54.99</p>
+              <p class="precio">$94.99</p>
+            </div>
+            <div class="cantidad">
+              <span class="material-symbols-outlined signo">
+                remove
+              </span>
+              <p class="cantidad__numero">1</p>
+              <span class="material-symbols-outlined signo">
+                add
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="car">
+          <img src="img/photo2.png" alt="levis shoes">
+          <div class="precio-cantidad">
+            <div>
+              <h3>Vintage Backbag</h3>
+              <p class="--naranja">$74.99</p>
+              <p class="precio">$124.99</p>
+            </div>
+            <div class="cantidad">
+              <span class="material-symbols-outlined signo">
+                remove
+              </span>
+              <p class="cantidad__numero">1</p>
+              <span class="material-symbols-outlined signo">
+                add
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="envio-titulo flex-envio">
+          <h2 class=" inline">Shipping</h2>
+          <p class="envio-precio">$19</p>
+        </div>
+        <div class="flex-envio ">
+          <h2 class="inline">Total</h2>
+          <p class="envio-precio">$148.98</p>
+        </div>
+      </div>
+    </main>
+  </div>
 
+  <footer class="footer container">
+  </footer>
 </body>
 
 </html>

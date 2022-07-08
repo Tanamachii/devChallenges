@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -10,4 +12,100 @@ html {
 
 body {
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e5150;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+img {
+  border-radius: 5%;
+  width: 135px;
+  height: 135px;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #828282;
+  font-size: 32px;
+}
+.--gris {
+  color: #828282;
+}
+.--naranja {
+  color: #f2994a;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline;
+  padding-right: 1rem;
+}
+.container {
+  max-width: 1200px;
+  padding: 3rem 3rem;
+  margin: 0 auto;
+}
+.titulo-principal {
+  color: #4e5150;
+  font-size: 36px;
+  font-weight: 600;
+}
+.grid {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 2fr 1fr;
+}
+.precio {
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: line-through;
+  display: inline;
+}
+.form {
+}
+.car-total {
+  padding: 3rem;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+}
+.car {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.precio-cantidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #828282;
+  border-radius: 14px;
+}
+.signo {
+  font-size: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5%;
+}
+.envio-titulo {
+  margin-top: 5rem;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+}
+.envio-precio {
+  text-align: right;
+}
+.flex-envio {
+  display: flex;
+  justify-content: space-between;
 }
