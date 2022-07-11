@@ -16,9 +16,80 @@
   <div class="container">
     <h1 class="titulo-principal">Checkout</h1>
     <main class="grid">
-      <div class="form">
+      <form id="form" onsubmit="return modal()">
         <h2>Contact infomation</h2>
-      </div>
+        <label for="email" class="etiqueta">E-mail</label>
+        <div class="container-icon">
+          <span class="material-symbols-outlined">
+            mail
+          </span>
+          <input required type="email" placeholder="Enter your email..." id="email" class="input" required>
+        </div>
+        <label for="phone" class="etiqueta">Phone</label>
+        <div class="container-icon">
+          <span class="material-symbols-outlined">
+            call
+          </span>
+          <input required type="number" placeholder="Enter your phone..." id="phone" class="input">
+        </div>
+
+        <h2>Shipping adress</h2>
+        <label for="name" class="etiqueta">Full name</label>
+        <div class="container-icon">
+          <span class="material-symbols-outlined">
+            person
+          </span>
+          <input required type="text" placeholder="Enter your name..." id="name" class="input">
+        </div>
+        <label for="adress" class="etiqueta">Adress</label>
+        <div class="container-icon">
+          <span class="material-symbols-outlined">
+            home
+          </span>
+          <input required type="text" placeholder="Enter your adress..." id="adress" class="input">
+        </div>
+        <label for="city" class="etiqueta">City</label>
+        <div class="container-icon">
+          <span class="material-symbols-outlined">
+            apartment
+          </span>
+          <input required type="text" placeholder="Enter your City..." id="city" class="input">
+        </div>
+        <div class="country-postalcode">
+          <div class="country">
+            <label for="country" class="etiqueta">Country</label>
+            <div class="container-icon">
+              <span class="material-symbols-outlined">
+                public
+              </span>
+              <select required id="country" class="input">
+                <option selected disabled>Your country...</option>
+                <option value="mexico">MÉXICO</option>
+                <option value="mexico">Colombia</option>
+                <option value="mexico">USA</option>
+                <option value="mexico">CANADA</option>
+                <option value="mexico">BUDAPEST</option>
+                <option value="mexico">JAPÓN</option>
+
+              </select>
+            </div>
+          </div>
+          <div class="postalcode">
+            <label for="postal-code" class="etiqueta">Postal code</label>
+            <div class="container-icon">
+              <span class="material-symbols-outlined">
+                markunread_mailbox
+              </span>
+              <input required type="number" placeholder="Enter your Postal code..." id="postal-code" class="input">
+            </div>
+          </div>
+        </div>
+        <label class="checkbox"><input type="checkbox"> Save this information for next time</label>
+
+        <div class="flex-boton">
+          <button class="boton" type="submit">Continue</button>
+        </div>
+      </form>
       <div class="car-total">
         <div class="car">
           <img src="img/photo1.png" alt="mochila">
@@ -72,6 +143,8 @@
 
   <footer class="footer container">
   </footer>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
