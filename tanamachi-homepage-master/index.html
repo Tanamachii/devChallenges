@@ -6,12 +6,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>homepage</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/css.css">
 </head>
 
 <body>
-
+  <header class="navbar">
+    <p class="navbar__titulo">Tanamachi</p>
+    <div class="nav-links">
+      <a href="#" class="link">Home</a>
+      <a href="#" class="link">Services</a>
+      <a href="#" class="link">Our works</a>
+      <a href="#" class="link">Clients</a>
+      <a href="#" class="link">Contact</a>
+    </div>
+  </header>
+  <main>
+    <section class="home" id="home">
+      <div class="container-chico">
+        <p class="home__titulo">Unhappy with your website?</p>
+        <h2>We create beautiful and fast web services</h2>
+      </div>
+      <img src="img/heroImage.jpg" alt="imagen principal" class="imagen-principal">
+      <div class="container-chico">
+        <h2 class="w-50">Story, emotion and purpose</h2>
+        <p class="w-50 container-chico__texto">We help transform your ideas into real world applications that will
+          outperform your toughest
+          competition and
+          help you achieve your strategic goals in short period of time.</p>
+        <label for="email" class="contact-you">Want us to contact you?</label>
+        <form action="submit" class="w-50 form">
+          <input type="email" required class="input" placeholder="Email" id="email">
+          <button type="submit" class="boton">Join</button>
+        </form>
+      </div>
+    </section>
+    <section class="services container" id="services">
+      <h3 class="services__titulo-principal">We offer high demand services </h3>
+      <div class="flex-services">
+        <div class="ui-ux">
+          <span class="material-symbols-outlined icono ui">
+            edit
+          </span>
+          <h4 class="services__titulo">UI/UX Design</h4>
+          <p class="services__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis
+            turpis.</p>
+          <a href="#" class="services__boton">Get started</a>
+        </div>
+        <div class="front-end">
+          <span class="material-symbols-outlined icono front">
+            code
+          </span>
+          <h4 class="services__titulo">Front-end</h4>
+          <p class="services__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis
+            turpis.</p>
+          <a href="#" class="services__boton">Get started</a>
+        </div>
+        <div class="back-end">
+          <span class="material-symbols-outlined icono back">
+            dns
+          </span>
+          <h4 class="services__titulo">UI/UX Design</h4>
+          <p class="services__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis
+            turpis.</p>
+          <a href="#" class="services__boton">Get started</a>
+        </div>
+      </div>
+    </section>
+    <section class="works" id="works"></section>
+    <section class="client" id="client"></section>
+    <section class="contact" id="contact"></section>
+  </main>
 </body>
 
 </html>

@@ -16,7 +16,150 @@ body {
 }
 h2 {
   font-size: 48px;
+  font-weight: 500;
 }
 h3 {
   font-size: 36px;
+  font-weight: 500;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+.navbar__titulo {
+  font-weight: 800;
+  font-size: 36px;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.link {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.link:hover {
+  color: #2d9cdb;
+}
+.home__titulo {
+  margin-top: 5rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2d9cdb;
+}
+.container-chico {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.imagen-principal {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.w-50 {
+  width: 50%;
+}
+.container-chico__texto {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+  margin-bottom: 5rem;
+}
+.contact-you {
+  font-size: 14px;
+  color: #828282;
+}
+.form {
+  position: relative;
+}
+.input {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.boton {
+  color: white;
+  background-color: #2d9cdb;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.boton:hover {
+  transition-duration: 0.5s;
+  background-color: #2273a1;
+}
+.boton:not(:hover) {
+  transition-duration: 0.5s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 15rem auto;
+}
+.services__titulo {
+  color: #333333;
+  font-size: 24px;
+}
+.services__titulo-principal {
+  width: 30%;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.flex-services {
+  display: flex;
+  gap: 3rem;
+}
+.icono {
+  border-radius: 16px;
+  color: white;
+  padding: 1.5rem;
+  font-size: 36px;
+}
+.ui {
+  background-color: #2d9cdb;
+}
+.front {
+  background-color: #27ae60;
+}
+.back {
+  background-color: #eb5757;
+}
+.services__boton {
+  text-decoration: none;
+  color: #828282;
+  padding: 1rem 2rem;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+}
+.services__texto {
+  line-height: 2;
+  margin: 3rem 0;
+  color: #4f4f4f;
+}
+.ui-ux,
+.front-end,
+.back-end {
+  padding: 3rem;
+}
+
+.ui-ux:hover,
+.front-end:hover,
+.back-end:hover {
+  box-shadow: 0px 3px 7px 0px rgba(128, 128, 128, 0.64);
+  border-radius: 12px;
+}
+.services__boton:hover {
+  color: white;
+  background-color: #2d9cdb;
 }
