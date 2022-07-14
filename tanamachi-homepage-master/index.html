@@ -16,11 +16,11 @@
   <header class="navbar">
     <p class="navbar__titulo">Tanamachi</p>
     <div class="nav-links">
-      <a href="#" class="link">Home</a>
-      <a href="#" class="link">Services</a>
-      <a href="#" class="link">Our works</a>
-      <a href="#" class="link">Clients</a>
-      <a href="#" class="link">Contact</a>
+      <a href="#home" class="link">Home</a>
+      <a href="#services" class="link">Services</a>
+      <a href="#works" class="link">Our works</a>
+      <a href="#client" class="link">Clients</a>
+      <a href="#contact" class="link">Contact</a>
     </div>
   </header>
   <main>
@@ -31,7 +31,7 @@
       </div>
       <img src="img/heroImage.jpg" alt="imagen principal" class="imagen-principal">
       <div class="container-chico">
-        <h2 class="w-50">Story, emotion and purpose</h2>
+        <h2 class="w-50 w-50-mobile">Story, emotion and purpose</h2>
         <p class="w-50 container-chico__texto">We help transform your ideas into real world applications that will
           outperform your toughest
           competition and
@@ -44,7 +44,7 @@
       </div>
     </section>
     <section class="services container" id="services">
-      <h3 class="services__titulo-principal">We offer high demand services </h3>
+      <h3 class="titulo-principal">We offer high demand services </h3>
       <div class="flex-services">
         <div class="ui-ux">
           <span class="material-symbols-outlined icono ui">
@@ -78,9 +78,99 @@
         </div>
       </div>
     </section>
-    <section class="works" id="works"></section>
-    <section class="client" id="client"></section>
-    <section class="contact" id="contact"></section>
+    <section class="works container" id="works">
+      <h3 class="titulo-principal">Good design means good business </h3>
+      <div class="works-grid">
+        <div class="works-element">
+          <img src="img/smarthome.jpg" alt="smarthome" class="work__imagen">
+          <p class="work__descripcion">Full stack application</p>
+          <h4 class="work__titulo">Smart home dashboard</h4>
+        </div>
+        <div class="works-element">
+          <img src="img/onboard.png" alt="smarthome" class="work__imagen">
+          <p class="work__descripcion">UX / UI design</p>
+          <h4 class="work__titulo">Onboard application</h4>
+        </div>
+        <div class="works-element">
+          <img src="img/booking.png" alt="smarthome" class="work__imagen">
+          <p class="work__descripcion">Mobile application</p>
+          <h4 class="work__titulo">Booking system</h4>
+        </div>
+        <div class="works-element">
+          <img src="img/juice-product.png" alt="smarthome" class="work__imagen">
+          <p class="work__descripcion">Front End applicati on</p>
+          <h4 class="work__titulo">Juice product homepage</h4>
+        </div>
+      </div>
+      <div class="flex-see">
+        <h4>see more </h4>
+        <span class="material-symbols-outlined">
+          trending_flat
+        </span>
+      </div>
+    </section>
+    <section class="client container" id="client">
+      <div class="client_flex">
+        <div class="client__info">
+          <p class="client__info--text">Meet the team</p>
+          <h3 class="client__info--titulo">We are chilled and a laidback team</h3>
+          <p class="client__info--info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="client__imagenes">
+          <img src="img/person3.png" alt=" persona 3" class="helper-img">
+          <div class="client__imagenes--grupo">
+            <img src="img/person1.png" alt="persona 1" class="helper-img">
+            <img src="img/person2.png" alt="persona 2" class="helper-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h3>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+      </h3>
+      <div class="contact__perfil">
+        <img src="img/person4.png" alt="perfil" class="contact__imagen">
+        <div>
+          <p class="contact__name">Carlos Tran</p>
+          <p class="contact__role">The Decorate Gatsby</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__flex">
+        <nav class="nav-links__footer">
+          <a href="#home" class="link__footer">Home</a>
+          <a href="#services" class="link__footer">Services</a>
+          <a href="#works" class="link__footer">Our works</a>
+          <a href="#client" class="link__footer">Clients</a>
+          <a href="#contact" class="link__footer">Contact</a>
+        </nav>
+        <div class="redes">
+          <p class="navbar__titulo">Tanamachi</p>
+          <div class="icons">
+            <span class="material-symbols-outlined">
+              public
+            </span>
+            <span class="material-symbols-outlined">
+              thumb_up
+            </span>
+            <span class="material-symbols-outlined">
+              share
+            </span>
+          </div>
+        </div>
+        <div class="contact_us">
+          <label for="email__footer" class="contact-you">Want us to contact you?</label>
+          <form action="submit" class="form">
+            <input type="email" required class="input input__footer" placeholder="Email" id="email__footer">
+            <button type="submit" class="boton">Join</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer__fot">created by Tanamachi - devChallenges.io</p>
+    </footer>
   </main>
 </body>
 
