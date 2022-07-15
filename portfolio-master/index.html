@@ -6,12 +6,224 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/css.css">
 </head>
 
 <body>
+    <div class="grid-principal container">
+        <div class="grid-1">
+            <div class="profile caja">
+                <img src="img/yo.webp" alt="Imagen mía" class="profile__imagen">
+                <h2>Pedro Tanamachi</h2>
+                <p>Front end developer</p>
+                <div class="profile__contacto">
+                    <p class="profile__contacto--info">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        pedroeduardotanamachigarza@gmail.com</p>
+                    <p class="profile__contacto--info">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        (+52) 6671850058
+                    </p>
+                    <a href="https://www.linkedin.com/in/pedrotanamachi/" target="_blank"
+                        class="profile__contacto--info">
+                        <span class="material-symbols-outlined">
+                            link
+                        </span>
+                        Linkedin: pedrotanamachi/
+                    </a>
+                </div>
+                <p>Soy un programador jr , que aspira a convertirse en un desarrollador front end y luego un full stack
+                </p>
+            </div>
+            <div class="experience caja">
+                <h2 class="f-w-500 no-margin">Experiencia</h2>
+                <div class="experience__jobs">
+                    <div class="experience__job">
+                        <img src="img/coppel.webp" alt="Logo coppel">
+                        <div>
+                            <p>Jun 2021 - Current</p>
+                            <p class="experience__job--title f-w-600 ">Programador</p>
+                            <p>Programador en afore coppel, he movido de todo un poco, asi que tengo experiencia en
+                                varias areas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hobbies caja">
+                <h2 class="f-w-500 no-margin">Hobbies</h2>
+                <div class="hobbies__elements">
+                    <div class="hobbies__hobby">
+                        <img src="img/gaming.jpeg" alt="Videojuegos" class="hobbies__imagen">
+                        <p class="hobbies__elements--title">Gaming</p>
+                        <p>Me gusta mucho jugar videojuegos en mis tiempos libres en especial los juegos RPG.</p>
+                    </div>
+                    <div class="hobbies__hobby">
+                        <img src="img/gym.jpeg" alt="Gimnasio" class="hobbies__imagen">
+                        <p class="hobbies__elements--title">Exercise (GYM)</p>
+                        <p>Me gusta mucho hacer ejercicio pero en especial el gimnasio</p>
+                    </div>
+                    <div class="hobbies__hobby">
+                        <img src="img/travel.jpg" alt="Gimnasio" class="hobbies__imagen">
+                        <p class="hobbies__elements--title">Viajar</p>
+                        <p>Disfruto mucho viajar, y cada vez que tengo la oportunidad lo suelo hacer aunque sea a un
+                            rancho a 10km.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="skills">
+                <div class="skills__code caja">
+                    <h3 class="no-margin skills__code--titulo">Front end</h3>
+                    <div class="skills__code--skill">
+                        <p>html</p>
+                        <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skills__code--skill">
+                        <p>css</p>
+                        <progress max="100" value="65"></progress>
+                    </div>
+                    <div class="skills__code--skill">
+                        <p>javascript</p>
+                        <progress max="100" value="50"></progress>
+                    </div>
+                    <div class="skills__code--skill">
+                        <p>vue</p>
+                        <progress max="100" value="20"></progress>
+                    </div>
+                    <div class="skills__code--skill">
+                        <p>react</p>
+                        <progress max="100" value="5"></progress>
+                    </div>
+                </div>
+                <div class="skills__design caja">
+                    <h3 class="no-margin skills__design--titulo">Design</h3>
+                    <div class="skills__code--skill">
+                        <p>figma</p>
+                        <progress max="100" value="20"></progress>
+                    </div>
+                    <div class="skills__code--skill">
+                        <p>photoshop</p>
+                        <progress max="100" value="10"></progress>
+                    </div>
+                    <div class="skills__code--skill">
+                        <p>ilustrator</p>
+                        <progress max="100" value="10"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="projects__contenedor caja">
+                    <p class="projects__title">Projects ( <span class="num_pro"></span> )</p>
+                    <div class="filtrado">
+                        <p class="no-margin">Filtrar por: </p>
+                        <a class="filtrado__label" id="html">html</a>
+                        <a class="filtrado__label" id="css">css</a>
+                        <a class="filtrado__label" id="responsive">responsive</a>
+                        <a class="filtrado__label" id="js">javascript</a>
+                    </div>
+                </div>
+                <div class="projects__project caja">
+                    <img src="img/recipe.png" alt="proyecto sobre receta" class="projects__imagen">
+                    <div class="projects__project--info">
+                        <div class="projects__project--label">
+                            <p class="mayus tags" value="html">#Html</p>
+                            <p class="mayus tags" value="css">#css</p>
+                            <p class="mayus tags" value="responsive">#responsive</p>
+                        </div>
+                        <h2 class="f-w-500">Recipe blog</h2>
+                        <p>Esta página se creo para un challenge de una página llamada devChallenges, use css y html
+                            puro y es responsiva para telefonos</p>
+                        <div class="projects__botones">
+                            <a href="https://calm-pothos-b9a89f.netlify.app/" class="btn btn-demo"
+                                target="_blank">Demo</a>
+                            <a href="https://github.com/Tanamachii/devChallenges/tree/main/recipe-page-master"
+                                class="btn btn-code" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__project caja">
+                    <img src="img/gallery.png" alt="proyecto sobre una galeria" class="projects__imagen">
+                    <div class="projects__project--info">
+                        <div class="projects__project--label">
+                            <p class="mayus tags" value="html">#HTML</p>
+                            <p class="mayus tags" value="css">#css</p>
+                            <p class="mayus tags" value="responsive">#responsive</p>
+                        </div>
+                        <h2 class="f-w-500">Goku gallery</h2>
+                        <p>Esta página se creo para un challenge de una página llamada devChallenges, use css y html
+                            puro y es responsiva para telefonos, use a goku como mi principal referencia.</p>
+                        <div class="projects__botones">
+                            <a href="https://harmonious-rolypoly-bb3f86.netlify.app/" class="btn btn-demo"
+                                target="_blank">Demo</a>
+                            <a href="https://github.com/Tanamachii/devChallenges/tree/main/my-gallery-master"
+                                class="btn btn-code" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__project caja">
+                    <img src="img//checkout.png" alt="proyecto sobre receta" class="projects__imagen">
+                    <div class="projects__project--info">
+                        <div class="projects__project--label">
+                            <p class="mayus tags" value="html">#HTML</p>
+                            <p class="mayus tags" value="css">#css</p>
+                            <p class="mayus tags" value="responsive">#responsive</p>
+                        </div>
+                        <h2 class="f-w-500">Checkout page</h2>
+                        <p>Esta página se creo para un challenge de una página llamada devChallenges, use css y html
+                            puro y es responsiva para telefonos</p>
+                        <div class="projects__botones">
+                            <a href="https://calm-selkie-2f4725.netlify.app/" class="btn btn-demo"
+                                target="_blank">Demo</a>
+                            <a href="https://github.com/Tanamachii/devChallenges/tree/main/checkout-page-master"
+                                class="btn btn-code" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__project caja">
+                    <img src="img/consultant.png" alt="proyecto sobre receta" class="projects__imagen">
+                    <div class="projects__project--info">
+                        <div class="projects__project--label">
+                            <p class="mayus tags" value="html">#HTML</p>
+                            <p class="mayus tags" value="css">#css</p>
+                            <p class="mayus tags" value="responsive">#responsive</p>
+                            <p class="mayus tags" value="js">#javascript</p>
+                        </div>
+                        <h2 class="f-w-500">Modern interior page</h2>
+                        <p>Esta página se creo para un challenge de una página llamada devChallenges, use css,html y js
+                            , tambien es responsiva para telefonos</p>
+                        <div class="projects__botones">
+                            <a href="https://extraordinary-cuchufli-cfcca1.netlify.app/" class="btn btn-demo"
+                                target="_blank">Demo</a>
+                            <a href="https://github.com/Tanamachii/devChallenges/tree/main/interior-consultant-master"
+                                class="btn btn-code" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="certificades">
+                <div class="certificades__contenedor caja">
+                    <p class="certificades__title">Certificados</p>
+                </div>
+                <div class="certificades__project caja">
+                    <img src="img/certificado1.png" alt="proyecto sobre receta" class="certificades__imagen">
+                    <a href="https://www.freecodecamp.org/certification/Tanamachi/responsive-web-design"
+                        class="btn btn-demo btn-certificade" target="_blank">Revisar certificado</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

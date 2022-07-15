@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+/* Variables globales */
+:root {
+  --blanco: #ffffff;
+  --negro: #000000;
+  --azul: #2f80ed;
+  --gris-oscuro: #4f4f4f;
+  --gris-claro: #333333;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -10,4 +20,199 @@ html {
 
 body {
   font-size: 16px;
+  background-color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+  color: #828282;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  font-weight: 500;
+  font-size: 16px;
+}
+h2,
+h3,
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+img {
+  width: 100%;
+  border-radius: 14px;
+}
+a {
+  text-decoration: none;
+  color: var(--negro);
+}
+.f-w-500 {
+  font-weight: 500;
+}
+.f-w-600 {
+  font-weight: 500;
+}
+.no-margin {
+  margin: 0;
+}
+.mayus {
+  text-transform: uppercase;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.container {
+  max-width: 1200px;
+  padding: 5rem;
+  margin: 0 auto;
+}
+.caja {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0px 6px 11px -2px rgba(135, 135, 135, 0.35);
+}
+.grid-principal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+.grid-1,
+.grid-2 {
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: min-content;
+}
+.profile__contacto {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.profile__contacto--info {
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+  gap: 1rem;
+  align-items: center;
+  color: #4f4f4f;
+}
+.experience__jobs,
+.hobbies__elements {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+.experience__job {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  gap: 1rem;
+}
+.experience__job--title,
+.hobbies__elements--title {
+  color: var(--gris-claro);
+}
+.hobbies__imagen {
+  object-fit: cover;
+  /*object-position: center; Ayuda a centrar la imagen pero interna sin moverle a lo externo*/
+  height: 100px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.skills__code--titulo,
+.skills__design--titulo {
+  font-weight: 700;
+  color: var(--gris-claro);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.skills__code--skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills__code--skill > p {
+  text-transform: uppercase;
+}
+
+.projects__imagen {
+  width: 250px;
+}
+.projects,
+.certificades {
+  display: grid;
+  gap: 1rem;
+}
+.projects__contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects__title,
+.certificades__title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--gris-claro);
+}
+.projects__project,
+.certificades__project {
+  display: flex;
+  gap: 2rem;
+}
+.projects__project--label {
+  display: flex;
+  gap: 2rem;
+}
+.projects__botones {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  padding: 1rem 4rem;
+  border: 1px solid var(--azul);
+  border-radius: 12px;
+}
+.btn-demo {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+.btn-demo:hover {
+  background-color: #205ba9;
+}
+.btn-code {
+  color: var(--azul);
+}
+.btn-code:hover {
+  background-color: rgb(220, 220, 220);
+}
+.tags {
+  user-select: none;
+}
+.certificades__project {
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn-certificade {
+  text-align: center;
+}
+.filtrado {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.filtrado__label {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.filtrado__label:hover {
+  background-color: #205ba9;
 }
